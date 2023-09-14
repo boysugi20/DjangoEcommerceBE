@@ -71,3 +71,10 @@ class LoginSerializer(serializers.Serializer):
         return {
             'token': user.token,
         }
+    
+class ChangePasswordSerializer(serializers.Serializer):
+    old_password = serializers.CharField(required=True)
+    new_password = serializers.CharField(required=True)
+
+class ForgotPasswordSerializer(serializers.Serializer):
+    email = serializers.EmailField()

@@ -9,6 +9,7 @@ django-rest-framework = "*"
 djangorestframework = "*"
 pyjwt = "*"
 pytz = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
